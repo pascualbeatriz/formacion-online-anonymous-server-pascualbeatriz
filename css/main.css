@@ -1,31 +1,175 @@
 /* COMMON */
-body {}
-.page {}
+body {
+  /* background-color:blue; */
+  /* margin:0;
+  padding:0; */
+  
+}
+
+.page {
+
+}
+
+.page .page-open{
+
+}
+
+.page__header {
+  border:solid green 3px;
+}
+
+.nav-trigger {
+background-color:cyan;
+cursor:pointer;
+}
+
+.nav-trigger::after{
+  content:"v";
+  transform:translate(-50%);
+  width:24px;
+}
+
+.nav-trigger:hover{
+background-color:lime;
+}
+
+.nav {
+  display:none;
+}
+
+.nav__items {
+  border:solid yellow 3px;
+}
+
+/* Cuando esta abierto */
+
+.page__header-open{}
+/* Cuando el contenido este dentro de esta clase esto este es el contenido que tiene que verse */
+.page__header-open .nav{
+  display:block;
+}
 
 
+
+
+.page__header {
+
+  /* background-image:url("/images/anonymous-server-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc; */
+  
+  /* width:100vw;
+  height: 100vh;
+  margin:0;
+  position:relative; */
+}
+
+
+.page :before{
+  /* content:"";
+  background: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.35) 50%); */
+} 
 
 
 /* HEADER */
-.page__header {}
-.nav-trigger {}
+.page__header {
+  /* display:flex;
+  justify-content: flex-end;
+  align-items: center; */
+}
 
+.nav-trigger {
+  /* background-image:url("/images/ico-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.35);
+  width:40px;
+  height: 40px;
+  margin:20px;
+  cursor:pointer; */
+}
 
+.nav-trigger:hover{
+  /* background:rgba(0,0,255,.2);  */
+}
+
+/* .nav-trigger::after{
+  widows: 10px;
+  height:5px;  
+} */
 
 
 /* MENU */
-.nav {}
-.nav__items {}
+.nav {
+
+ 
+}
+/* cuando el menu esta abierto */
+
+
+/* esto es ul */
+.nav__items {
+
+  /* position:relative;
+  top:25%;
+  width:100vw;
+  text-align:center;
+  margin-top:30px; */
+}
+
+.page__header .nav-close{
+
+}
+/* esto es li */
 .nav__item {}
-.nav__link {}
-.nav-close {}
+/* esto es el link de cada li */
+.nav__link {
+  /* padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  /* transition: 0.3s; */ 
+}
+
+.nav__link:hover, .nav__link:focus{
+  /* color: #f1f1f1; */
+}
+/* esto es el boton de cierre */
+.nav-close {
+  /* background-image:url("/images/ico-close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.35);
+  width:40px;
+  height: 40px;
+  margin:20px;
+  position: absolute;
+  top:20px;
+  right:45px; */
+}
 
 
 
 
 /* MAIN */
-.page__main {}
-.page__wrapper {}
-.page__main-title {}
+.page__main {
+  /* position:absolute;
+  left:0;
+  top:100px;
+  width:50px */
+}
+.page__wrapper {
+  /* margin:20px; */
+}
+.page__main-title {
+  
+ 
+}
 
 
 
