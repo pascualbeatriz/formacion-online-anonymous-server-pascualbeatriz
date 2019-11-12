@@ -5,6 +5,8 @@ let collapsible = document.querySelector('.page__header');
 // collapsible.classList.add('page__header-open');
 const buttonMenu = document.querySelector('.nav-trigger');
 const navMenu = document.querySelector('.nav');
+const buttonCloseMenu = document.querySelector('.nav-close');
+
 
 function openNav (){
   console.log('yay');
@@ -14,9 +16,21 @@ function openNav (){
   if (buttonAct.classList.contains('page__header')) {
     buttonAct.parentElement.classList.remove('page__header-open');
   }else{
-    buttonAct.parentElement.classList.add('page__header-open')
+    buttonAct.parentElement.classList.add('page__header-open');
   }
 }
+
+function closeNav () {
+  // const buttonClose = event.currentTarget;
+  document.getElementsByClassName('nav').innerHTML = '';
+  navMenu.remove();
+  console.log('hay');  
+}
+
+
+
+
+
 
 // option1
 // function openNav (event) {
@@ -29,4 +43,4 @@ function openNav (){
 // }
 
 buttonMenu.addEventListener('click', openNav);
-// buttonCloseMenu.addEventListener('click', closeNav);
+buttonCloseMenu.addEventListener('click', closeNav);
