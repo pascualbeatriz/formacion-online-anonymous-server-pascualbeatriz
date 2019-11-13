@@ -59,7 +59,7 @@ body:before {
   cursor:pointer;
   position: absolute;
   top:20px;
-  right:45px; 
+  right:20px; 
 }
 
 .nav-trigger:hover{
@@ -135,10 +135,22 @@ body:before {
 }
 .page__main-title {
   font-family:Roboto Slab;
+  text-transform: uppercase;
   font-size:40px;
-  line-height: 1;
+  line-height: 1.2;
   width:50px;
   color:white;
+}
+
+@media all and (min-width:768px) {
+  .page__main {
+    margin: 300px 0 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page__main-title {
+    font-size:70px;
+  }
 }
 
 
